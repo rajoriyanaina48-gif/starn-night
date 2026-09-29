@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register — STAR NIGHTS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-zinc-950 text-white">
+  <!-- header section start -->
+    <header class="fixed top-0 z-50 w-full border-b border-white/10 bg-zinc-950/80 backdrop-blur-lg">
+        <nav class="mx-auto flex max-w-7xl items-center justify-between px-5 py-4"><a href="index.html"
+                class="text-2xl font-black">STAR<span class="text-fuchsia-500">NIGHTS</span></a>
+                <!-- <button id="menuBtn"
+                class="rounded-lg border border-white/10 px-3 py-2 md:hidden">☰</button> -->
+            <div id="navMenu"
+                class="hidden absolute left-0 top-full w-full bg-zinc-950 p-5 md:static md:flex md:w-auto md:bg-transparent md:p-0">
+                <div class="flex flex-col gap-4 md:flex-row md:items-center md:gap-7"><a class="nav-link"
+                        href="index.html">Home</a><a class="nav-link" href="schedule.html">Schedule</a><a
+                        class="nav-link" href="performers.html">Performers</a><a class="nav-link"
+                        href="register.html">Register</a></div>
+            </div>
+        </nav>
+    </header>
+    <!-- header section end -->
+     <!-- main section start -->
+    <main class="mx-auto max-w-6xl px-5 pb-24 pt-36">
+        <div class="grid gap-10 lg:grid-cols-[.8fr_1.2fr]">
+            <div>
+                <p class="eyebrow">Secure your spot</p>
+                <h1 class="page-title">Get your <span>pass.</span></h1>
+                <p class="mt-5 text-zinc-400">Choose a ticket, complete the registration form and get ready for one
+                    electric night.</p>
+                <div class="mt-8 grid gap-4 sm:grid-cols-3 lg:grid-cols-1">
+                    <div class="ticket">
+                        <div><b>EARLY BIRD</b>
+                            <p>Entry + wristband</p>
+                        </div><strong>₹499</strong>
+                    </div>
+                    <div class="ticket">
+                        <div><b>GENERAL</b>
+                            <p>Entry + event access</p>
+                        </div><strong>₹799</strong>
+                    </div>
+                    <div class="ticket">
+                        <div><b>VIP</b>
+                            <p>Priority entry + lounge</p>
+                        </div><strong>₹1499</strong>
+                    </div>
+                </div>
+            </div>
+            <form id="registerForm" class="rounded-3xl border border-white/10 bg-white/[.04] p-6 sm:p-8">
+                <h2 class="text-2xl font-black">Registration</h2>
+                <div class="mt-6 grid gap-5 sm:grid-cols-2"><label>Full Name<input required name="name" type="text"
+                            placeholder="Your name"></label><label>Email<input required name="email" type="email"
+                            placeholder="you@example.com"></label><label class="sm:col-span-2">Ticket Type<select
+                            name="ticket">
+                            <option>Early Bird — ₹499</option>
+                            <option>General — ₹799</option>
+                            <option>VIP — ₹1499</option>
+                        </select></label><label class="sm:col-span-2">Mobile Number<input required type="tel"
+                            placeholder="+91 98765 43210"></label></div>
+                <div class="mt-6">
+                    <p class="mb-3 font-bold">Preferred pass</p>
+                    <div class="flex flex-wrap gap-3"><label class="radio"><input type="radio" name="pass" checked>
+                            Standard</label><label class="radio"><input type="radio" name="pass"> VIP</label></div>
+                </div>
+                <label class="mt-6 flex items-start gap-3 text-sm text-zinc-400"><input required type="checkbox"
+                        class="mt-1"> I agree to the event terms, entry rules and privacy policy.</label>
+                <button
+                    class="mt-7 w-full rounded-xl bg-fuchsia-500 px-6 py-4 font-black text-black hover:bg-fuchsia-400"
+                    type="submit">CONFIRM REGISTRATION →</button>
+                <p id="formMessage" class="mt-4 hidden rounded-xl bg-emerald-400/10 p-4 text-emerald-300">Registration
+                    form submitted successfully! This demo does not process real payments.</p>
+            </form>
+        </div>
+        <section class="mt-16 overflow-hidden rounded-3xl border border-white/10"><iframe title="Jaipur map"
+                class="h-72 w-full grayscale"
+                src="https://www.google.com/maps?q=Jaipur,Rajasthan&output=embed"></iframe></section>
+    </main>
+    <!-- main section end -->
+     <!-- footer section start -->
+    <footer class="border-t border-white/10 px-5 py-10 text-center text-sm text-zinc-500">© 2026 STAR Nights · Official
+        Event Website</footer>
+        <!-- footer section end -->
+    
+</body>
+
+</html>
