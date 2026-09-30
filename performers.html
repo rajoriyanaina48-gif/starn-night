@@ -1,84 +1,339 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Performers — STAR NIGHTS</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg?v=2">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+      <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  >
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Performers — STAR NIGHTS</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="style.css">
-</head>
+  <body
+    class="bg-zinc-950 text-white pb-[70px] md:pb-0 font-['Inter',Arial,sans-serif]"
+  >
+    <!-- header section start -->
+    <header
+      class="fixed top-0 z-50 w-full border-b border-white/10 bg-zinc-950/80 backdrop-blur-lg"
+    >
+      <nav
+        class="mx-auto flex max-w-7xl items-center justify-between px-5 py-4"
+      >
+        <a
+          href="index.html"
+          class="text-2xl font-black tracking-tighter transition-transform hover:scale-105"
+          >STAR<span class="text-fuchsia-500">NIGHTS</span></a
+        >
 
-<body class="bg-zinc-950 text-white">
-  <!-- header section start -->
-  <header class="fixed top-0 z-50 w-full border-b border-white/10 bg-zinc-950/80 backdrop-blur-lg">
-    <nav class="mx-auto flex max-w-7xl items-center justify-between px-5 py-4"><a href="index.html"
-        class="text-2xl font-black">STAR<span class="text-fuchsia-500">NIGHTS</span></a>
-        <!-- <button id="menuBtn"
-        class="rounded-lg border border-white/10 px-3 py-2 md:hidden">☰</button> -->
-      <div id="navMenu"
-        class="hidden absolute left-0 top-full w-full bg-zinc-950 p-5 md:static md:flex md:w-auto md:bg-transparent md:p-0">
-        <div class="flex flex-col gap-4 md:flex-row md:items-center md:gap-7"><a class="nav-link"
-            href="index.html">Home</a><a class="nav-link" href="schedule.html">Schedule</a><a class="nav-link"
-            href="performers.html">Performers</a><a class="nav-link" href="register.html">Register</a><a
-            href="register.html" class="rounded-full bg-fuchsia-500 px-5 py-2.5 font-bold text-black">Get Tickets</a>
+        <div
+          class="hidden md:flex flex-col gap-4 md:flex-row md:items-center md:gap-7"
+        >
+          <a class="text-zinc-400 transition hover:text-white" href="index.html"
+            >Home</a
+          >
+          <a
+            class="text-zinc-400 transition hover:text-white"
+            href="schedule.html"
+            >Schedule</a
+          >
+          <a
+            class="text-fuchsia-400 font-bold transition hover:text-fuchsia-300"
+            href="performers.html"
+            >Performers</a
+          >
+          <a
+            class="text-zinc-400 transition hover:text-white"
+            href="register.html"
+            >Register</a
+          >
+          <a
+            href="register.html"
+            class="rounded-full bg-fuchsia-500 px-5 py-2.5 font-bold text-black transition-all hover:bg-fuchsia-400 hover:scale-105 hover:shadow-[0_0_15px_rgba(217,70,239,0.5)]"
+            >Get Tickets</a
+          >
         </div>
+      </nav>
+    </header>
+    <!-- header section end -->
+
+    <!-- Mobile Bottom Nav -->
+    <nav
+      class="fixed bottom-0 left-0 z-50 w-full border-t border-white/10 bg-zinc-950/90 backdrop-blur-lg md:hidden"
+    >
+      <div
+        class="flex justify-around items-center p-3 text-[10px] font-bold uppercase tracking-wider text-zinc-400"
+      >
+        <a
+          href="index.html"
+          class="flex flex-col items-center gap-1 hover:text-white transition-transform hover:scale-110 active:scale-95"
+          ><svg
+            class="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
+            /></svg
+          >Home</a
+        >
+        <a
+          href="schedule.html"
+          class="flex flex-col items-center gap-1 hover:text-white transition-transform hover:scale-110 active:scale-95"
+          ><svg
+            class="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+            /></svg
+          >Schedule</a
+        >
+        <a
+          href="performers.html"
+          class="flex flex-col items-center gap-1 text-white transition-transform hover:scale-110 active:scale-95"
+          ><svg
+            class="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3"
+            /></svg
+          >Artists</a
+        >
+        <a
+          href="register.html"
+          class="flex flex-col items-center gap-1 hover:text-white transition-transform hover:scale-110 active:scale-95"
+          ><svg
+            class="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M15 5v2m0 4v2m0 4v2M5 5a2 2 0 00-2 2v3a2 2 0 110 4v3a2 2 0 002 2h14a2 2 0 002-2v-3a2 2 0 110-4V7a2 2 0 00-2-2H5z"
+            /></svg
+          >Tickets</a
+        >
       </div>
     </nav>
-  </header>
-  <!-- header section end -->
-   <!-- main section start -->
-  <main class="mx-auto max-w-7xl px-5 pb-24 pt-36">
-    <p class="eyebrow">Meet the sound</p>
-    <h1 class="page-title">Artists <span>& Highlights</span></h1>
-    <div class="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-      <article class="artist-card">
-        <div class="artist-photo photo1">DJ</div>
-        <div class="p-5">
-          <p class="text-xs font-bold uppercase tracking-widest text-fuchsia-400">Headliner</p>
-          <h2>Riya Ray</h2>
-          <p>Electronic · Dance</p>
-        </div>
-      </article>
-      <article class="artist-card">
-        <div class="artist-photo photo2">LIVE</div>
-        <div class="p-5">
-          <p class="text-xs font-bold uppercase tracking-widest text-fuchsia-400">Main Stage</p>
-          <h2>The Echoes</h2>
-          <p>Indie · Pop Rock</p>
-        </div>
-      </article>
-      <article class="artist-card">
-        <div class="artist-photo photo3">BEAT</div>
-        <div class="p-5">
-          <p class="text-xs font-bold uppercase tracking-widest text-fuchsia-400">DJ Set</p>
-          <h2>Arjun V</h2>
-          <p>Hip-Hop · House</p>
-        </div>
-      </article>
-      <article class="artist-card">
-        <div class="artist-photo photo4">SOUL</div>
-        <div class="p-5">
-          <p class="text-xs font-bold uppercase tracking-widest text-fuchsia-400">Live</p>
-          <h2>Meera Collective</h2>
-          <p>R&B · Soul</p>
-        </div>
-      </article>
-    </div>
-    <section class="mt-20">
-      <p class="eyebrow">Partners</p>
-      <h2 class="section-title">Sponsors & Partners</h2>
-      <div class="mt-7 flex flex-wrap gap-3"><span class="logo-pill">SOUNDWAVE</span><span
-          class="logo-pill">RHYTHM</span><span class="logo-pill">BEATBOX</span><span class="logo-pill">URBAN
-          FM</span><span class="logo-pill">CITY EATS</span></div>
-    </section>
-  </main>
-  <!-- main section end -->
-   <!-- footer section start -->
-  <footer class="border-t border-white/10 px-5 py-10 text-center text-sm text-zinc-500">© 2026 STAR Nights · Official
-    Event Website</footer>
-    <!-- footer section end -->
- 
-</body>
 
+    <!-- main section start -->
+    <main class="mx-auto max-w-7xl px-5 pb-24 pt-36">
+      <p
+        class="text-[12px] font-extrabold uppercase tracking-[0.2em] text-[#e879f9]"
+      >
+        Meet the sound
+      </p>
+      <h1
+        class="text-[3.4rem] md:text-7xl lg:text-[6rem] font-black leading-none tracking-tighter"
+      >
+        Artists <span class="text-[#d946ef]">& Highlights</span>
+      </h1>
+
+      <div class="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <article
+          class="overflow-hidden rounded-3xl border border-white/10 bg-white/5 transition-all duration-300 hover:-translate-y-2 hover:border-[#e879f9]/50 hover:shadow-[0_10px_30px_rgba(232,121,249,0.15)] group cursor-pointer"
+        >
+          <div
+            class="flex h-[250px] md:h-[300px] items-center justify-center bg-[radial-gradient(circle_at_50%_35%,#f0abfc,transparent_22%),linear-gradient(135deg,#581c87,#18181b_55%,#4c0519)] font-['Anton'] text-[5rem] tracking-[0.05em] transition-transform duration-500 group-hover:scale-110"
+          >
+            DJ
+          </div>
+          <div class="p-5">
+            <p
+              class="text-xs font-bold uppercase tracking-widest text-fuchsia-400"
+            >
+              Headliner
+            </p>
+            <h2
+              class="mt-1.5 text-[1.35rem] font-black group-hover:text-fuchsia-300 transition-colors"
+            >
+              Riya Ray
+            </h2>
+            <p class="mt-1 text-zinc-500">Electronic · Dance</p>
+          </div>
+        </article>
+        <article
+          class="overflow-hidden rounded-3xl border border-white/10 bg-white/5 transition-all duration-300 hover:-translate-y-2 hover:border-[#e879f9]/50 hover:shadow-[0_10px_30px_rgba(232,121,249,0.15)] group cursor-pointer"
+        >
+          <div
+            class="flex h-[250px] md:h-[300px] items-center justify-center bg-[radial-gradient(circle_at_65%_30%,#818cf8,transparent_20%),linear-gradient(135deg,#172554,#18181b_55%,#701a75)] font-['Anton'] text-[5rem] tracking-[0.05em] transition-transform duration-500 group-hover:scale-110"
+          >
+            LIVE
+          </div>
+          <div class="p-5">
+            <p
+              class="text-xs font-bold uppercase tracking-widest text-fuchsia-400"
+            >
+              Main Stage
+            </p>
+            <h2
+              class="mt-1.5 text-[1.35rem] font-black group-hover:text-fuchsia-300 transition-colors"
+            >
+              The Echoes
+            </h2>
+            <p class="mt-1 text-zinc-500">Indie · Pop Rock</p>
+          </div>
+        </article>
+        <article
+          class="overflow-hidden rounded-3xl border border-white/10 bg-white/5 transition-all duration-300 hover:-translate-y-2 hover:border-[#e879f9]/50 hover:shadow-[0_10px_30px_rgba(232,121,249,0.15)] group cursor-pointer"
+        >
+          <div
+            class="flex h-[250px] md:h-[300px] items-center justify-center bg-[radial-gradient(circle_at_35%_35%,#f59e0b,transparent_20%),linear-gradient(135deg,#431407,#18181b_55%,#4c0519)] font-['Anton'] text-[5rem] tracking-[0.05em] transition-transform duration-500 group-hover:scale-110"
+          >
+            BEAT
+          </div>
+          <div class="p-5">
+            <p
+              class="text-xs font-bold uppercase tracking-widest text-fuchsia-400"
+            >
+              DJ Set
+            </p>
+            <h2
+              class="mt-1.5 text-[1.35rem] font-black group-hover:text-fuchsia-300 transition-colors"
+            >
+              Arjun V
+            </h2>
+            <p class="mt-1 text-zinc-500">Hip-Hop · House</p>
+          </div>
+        </article>
+        <article
+          class="overflow-hidden rounded-3xl border border-white/10 bg-white/5 transition-all duration-300 hover:-translate-y-2 hover:border-[#e879f9]/50 hover:shadow-[0_10px_30px_rgba(232,121,249,0.15)] group cursor-pointer"
+        >
+          <div
+            class="flex h-[250px] md:h-[300px] items-center justify-center bg-[radial-gradient(circle_at_60%_40%,#34d399,transparent_20%),linear-gradient(135deg,#064e3b,#18181b_55%,#312e81)] font-['Anton'] text-[5rem] tracking-[0.05em] transition-transform duration-500 group-hover:scale-110"
+          >
+            SOUL
+          </div>
+          <div class="p-5">
+            <p
+              class="text-xs font-bold uppercase tracking-widest text-fuchsia-400"
+            >
+              Live
+            </p>
+            <h2
+              class="mt-1.5 text-[1.35rem] font-black group-hover:text-fuchsia-300 transition-colors"
+            >
+              Meera Collective
+            </h2>
+            <p class="mt-1 text-zinc-500">R&B · Soul</p>
+          </div>
+        </article>
+      </div>
+
+      <section class="mt-20">
+        <p
+          class="text-[12px] font-extrabold uppercase tracking-[0.2em] text-[#e879f9]"
+        >
+          Partners
+        </p>
+        <h2
+          class="text-4xl md:text-5xl lg:text-[4rem] font-black tracking-tighter"
+        >
+          Sponsors & Partners
+        </h2>
+        <div class="mt-7 flex flex-wrap gap-3">
+          <span
+            class="rounded-full border border-white/10 bg-white/5 px-6 py-3.5 font-black text-zinc-400 transition-all duration-300 hover:bg-white/10 hover:text-white cursor-pointer hover:scale-105 hover:border-fuchsia-500/50"
+            >SOUNDWAVE</span
+          >
+          <span
+            class="rounded-full border border-white/10 bg-white/5 px-6 py-3.5 font-black text-zinc-400 transition-all duration-300 hover:bg-white/10 hover:text-white cursor-pointer hover:scale-105 hover:border-fuchsia-500/50"
+            >RHYTHM</span
+          >
+          <span
+            class="rounded-full border border-white/10 bg-white/5 px-6 py-3.5 font-black text-zinc-400 transition-all duration-300 hover:bg-white/10 hover:text-white cursor-pointer hover:scale-105 hover:border-fuchsia-500/50"
+            >BEATBOX</span
+          >
+          <span
+            class="rounded-full border border-white/10 bg-white/5 px-6 py-3.5 font-black text-zinc-400 transition-all duration-300 hover:bg-white/10 hover:text-white cursor-pointer hover:scale-105 hover:border-fuchsia-500/50"
+            >URBAN FM</span
+          >
+          <span
+            class="rounded-full border border-white/10 bg-white/5 px-6 py-3.5 font-black text-zinc-400 transition-all duration-300 hover:bg-white/10 hover:text-white cursor-pointer hover:scale-105 hover:border-fuchsia-500/50"
+            >CITY EATS</span
+          >
+        </div>
+      </section>
+    </main>
+    <!-- main section end -->
+
+    <!--  FOOTER -->
+        <!-- FOOTER -->
+    <footer class="bg-[#0b0c18] text-white border-t border-white/10 mt-20">
+        <div class="max-w-7xl mx-auto px-5 py-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+            <!-- Brand -->
+            <div>
+                <h2 class="text-3xl font-extrabold tracking-tight">STAR<span class="text-fuchsia-500">NIGHTS</span></h2>
+                <p class="mt-4 text-gray-400 text-sm">Celebrating the power of live events, electric atmospheres and unforgettable experiences.</p>
+                <div class="flex gap-3 mt-6">
+                    <a href="#" class="w-10 h-10 rounded-full bg-[#171a2b] flex items-center justify-center text-gray-300 hover:bg-fuchsia-500 hover:text-white transition"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="w-10 h-10 rounded-full bg-[#171a2b] flex items-center justify-center text-gray-300 hover:bg-fuchsia-500 hover:text-white transition"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#" class="w-10 h-10 rounded-full bg-[#171a2b] flex items-center justify-center text-gray-300 hover:bg-fuchsia-500 hover:text-white transition"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+            <!-- Links -->
+            <div>
+                <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                <ul class="space-y-2 text-sm text-gray-400">
+                    <li><a href="index.html" class="hover:text-fuchsia-400 transition">Home</a></li>
+                    <li><a href="schedule.html" class="hover:text-fuchsia-400 transition">Schedule</a></li>
+                    <li><a href="performers.html" class="hover:text-fuchsia-400 transition">Performers</a></li>
+                    <li><a href="register.html" class="hover:text-fuchsia-400 transition">Get Tickets</a></li>
+                </ul>
+            </div>
+            <!-- Contact (Location: Open Air Arena, Jaipur as requested) -->
+            <div>
+                <h3 class="text-xl font-bold mb-4">Contact Us</h3>
+                <ul class="space-y-4 text-sm text-gray-400">
+                    <li class="flex items-start gap-3"><i class="fa-solid fa-location-dot text-fuchsia-500 mt-1"></i> <span>Open Air Arena,<br>JLN Marg, Jaipur</span></li>
+                    <li class="flex items-center gap-3"><i class="fa-solid fa-envelope text-fuchsia-500"></i> <a href="mailto:hello@starnights.com" class="hover:text-fuchsia-400">hello@starnights.com</a></li>
+                    <li class="flex items-center gap-3"><i class="fa-solid fa-phone text-fuchsia-500"></i> <a href="tel:+919928355102" class="hover:text-fuchsia-400">+91 99283 55102</a></li>
+                </ul>
+            </div>
+            <!-- Loop -->
+            <div>
+                <h3 class="text-xl font-bold mb-4">Stay in the Loop</h3>
+                <p class="text-sm text-gray-400 mb-4">Get the latest updates and exclusive event offers.</p>
+                <ul class="space-y-2 text-sm text-gray-400">
+                    <li><i class="fa-solid fa-music text-fuchsia-500 mr-2"></i> Live Performances</li>
+                    <li><i class="fa-solid fa-star text-fuchsia-500 mr-2"></i> VIP Experiences</li>
+                </ul>
+            </div>
+        </div>
+        <!-- Bottom -->
+        <div class="border-t border-gray-800 py-6 px-5 max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-gray-500">
+            <p>© 2026 STAR Nights. All rights reserved.</p>
+            <div class="flex gap-4">
+                <a href="#" class="hover:text-fuchsia-400 transition">Privacy Policy</a>
+                <a href="#" class="hover:text-fuchsia-400 transition">Terms</a>
+            </div>
+        </div>
+        <div class="h-1 bg-gradient-to-r from-transparent via-fuchsia-500 to-transparent"></div>
+    </footer>
+</body>
 </html>
