@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ff3355" />
+      <stop offset="40%" stop-color="#d946ef" />
+      <stop offset="70%" stop-color="#8b5cf6" />
+      <stop offset="100%" stop-color="#3b82f6" />
+    </linearGradient>
+  </defs>
+
+  <g fill="none" stroke="url(#grad)" stroke-width="7" stroke-linecap="round">
+    <!-- Central Line -->
+    <line x1="25" y1="50" x2="90" y2="50" />
+    
+    <!-- Pills -->
+    <rect x="29" y="25" width="10" height="50" rx="5" />
+    <rect x="46" y="10" width="10" height="80" rx="5" />
+    <rect x="63" y="25" width="10" height="50" rx="5" />
+    <rect x="79" y="35" width="8" height="30" rx="4" />
+  </g>
+  
+  <!-- Left Dot -->
+  <circle cx="14" cy="50" r="7" fill="#ff3355" />
+</svg>
